@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mindmap Generator</title>
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas-container">
+            <canvas></canvas>
+        </div>
+        <div id="control-box">
+            <label for="corpus-input">Choose a text corpus:</label>
+            <input type="file" id="corpus-input" />
+            <label for="image-input">Choose background images:</label>
+            <input type="file" id="image-input" webkitdirectory directory multiple/>
+            <label for="canvas_width">Width of canvas:</label>
+            <input type="number" id="canvas_width" min="100" max="1000000" value="200" onchange="change_canvas_width()"/>
+            <label for="canvas_height">Height of canvas:</label>
+            <input type="number" id="canvas_height" min="100" max="1000000" value="200" onchange="change_canvas_height()"/>
+            <label for="image-input">Choose background images:</label>
+            <h2>Please enter the number of images you would like to generate:</h2>
+            <input type="number" id="imagenum" min="1" max="1000000" value="1"/>
+            <button id="gen-button" onClick="submit_click()">Generate Images</button>
+        </div>
+        <img src="img-bkg.jpeg" id="target"/>
+        <!-- Scripts -->
+        <script src="js/FileSaver.js"></script>
+        <script src="js/jszip.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/maptext.js"></script>
+    </body>
+</html>

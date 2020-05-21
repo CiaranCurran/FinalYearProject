@@ -1,0 +1,55 @@
+canvas {
+    background-color: #7dd2d2;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: "Courier 10 Pitch";
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+#canvas-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#target{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#imagenum {
+    margin: 5px;
+    width: 100px;
+}
+
+#control-box {
+    padding: 10px;
+    display: flex;
+    min-height: 1000px;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+}
